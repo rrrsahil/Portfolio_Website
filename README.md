@@ -1,156 +1,458 @@
 # Alok Pandit — Developer Portfolio
 
-> MERN Stack & Blockchain Developer Portfolio · Vanilla HTML/CSS/JS · No frameworks
+> MERN Stack Developer · Blockchain Developer · Full Stack Engineer
+> Built with Vanilla HTML, CSS and JavaScript — No Frameworks
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-6C63FF?style=for-the-badge&logo=vercel)](https://alokpandit.dev)
-[![GitHub](https://img.shields.io/badge/GitHub-alokpanditt-181717?style=for-the-badge&logo=github)](https://github.com/alokpanditt)
-
----
-
-## ✨ Features
-
-| Feature | Description |
-|---------|-------------|
-| 🎨 **Premium UI** | Dark glassmorphism theme with gradient accents and smooth animations |
-| 📱 **Fully Responsive** | Mobile-first layout — tested at 480px, 768px, 1024px, 1440px |
-| 🍔 **Hamburger Menu** | Slide-in mobile nav with X-button, outside-click and Escape-key close |
-| ⌨️ **Typewriter Effect** | Animated role-cycling in the hero section |
-| 🏃 **Skill Tabs** | Filter skills by category (Frontend / Backend / Blockchain / Tools) |
-| 💬 **Testimonials Marquee** | 3-row infinite scroll — Row 1 & 3 left, Row 2 right — loaded from JSON |
-| 📬 **Contact Form** | Client-side form with success state animation |
-| 🔢 **Animated Counters** | Stats count up when scrolled into view (IntersectionObserver) |
-| ⬆️ **Back to Top** | Floating button that appears after scrolling 400px |
-| 🔄 **AOS Animations** | Scroll-triggered entrance animations via AOS.js |
-| ⚡ **Page Loader** | Branded splash screen before content renders |
+🌐 **Live Portfolio:**
+https://portfoolio-web.netlify.app/
 
 ---
 
-## 📁 Project Structure
+# 🚀 About This Portfolio
+
+This is my **personal developer portfolio website** built to showcase my skills, projects, and experience as a **MERN Stack Developer and Blockchain Developer**.
+
+The goal of this project is to create a **modern, fast, responsive, and professional developer portfolio** without using heavy frameworks.
+
+The website focuses on:
+
+• Clean UI/UX
+• High performance
+• Modern animations
+• Modular architecture
+• Scalable project structure
+• JSON-based dynamic content loading
+
+This portfolio demonstrates my abilities in:
+
+• Frontend Development
+• Backend Development
+• Full Stack MERN Applications
+• Blockchain Development
+• UI/UX Implementation
+• Clean Architecture Design
+
+---
+
+# ✨ Key Features
+
+| Feature                  | Description                                         |
+| ------------------------ | --------------------------------------------------- |
+| 🎨 Premium UI            | Dark glassmorphism theme with gradient highlights   |
+| 📱 Fully Responsive      | Mobile-first layout optimized for all devices       |
+| 🍔 Hamburger Menu        | Slide-in mobile navigation with outside click close |
+| ⌨️ Typewriter Effect     | Animated developer role typing effect               |
+| 🧠 Skills Filter         | Skills grouped by category with tab filtering       |
+| 💬 Testimonials Marquee  | Infinite scrolling testimonials loaded from JSON    |
+| 📬 Contact Form          | Interactive contact form with validation            |
+| 🔢 Animated Counters     | Stats animate when scrolled into view               |
+| 🔄 AOS Scroll Animations | Smooth section entrance animations                  |
+| ⬆️ Back To Top           | Floating scroll-to-top button                       |
+| ⚡ Page Loader            | Splash loading screen before site loads             |
+| 🧩 JSON Data System      | Projects & testimonials loaded dynamically          |
+
+---
+
+# 👨‍💻 Developer Information
+
+**Name:** Alok Pandit
+**Role:** MERN Stack Developer & Blockchain Developer
+
+Specializations:
+
+• Full Stack Web Development
+• REST API Development
+• Blockchain Smart Contracts
+• Web3 Integration
+• Scalable Web Applications
+• Real-time Web Applications
+
+Tech Expertise:
+
+**Frontend**
+
+• HTML5
+• CSS3
+• JavaScript
+• React.js
+• Responsive Design
+
+**Backend**
+
+• Node.js
+• Express.js
+• MongoDB
+
+**Blockchain**
+
+• Solidity
+• Smart Contracts
+• Ethereum
+• Web3.js
+
+**Tools**
+
+• Git
+• GitHub
+• Postman
+• Docker
+• VS Code
+
+---
+
+# 🧱 Project Architecture
+
+The portfolio is built using a **modular and scalable structure**.
 
 ```
 3D Portfolio/
-├── index.html              # Main portfolio page
-├── all-projects.html       # Filterable projects grid
-├── project-details.html    # Individual project case study
+│
+├── index.html
+├── all-projects.html
+├── project-details.html
 ├── README.md
+│
 └── assets/
     ├── css/
-    │   └── style.css       # All styles (design tokens → responsive breakpoints)
+    │   └── style.css
+    │
     ├── js/
-    │   ├── main.js         # Core: navbar, typing, counters, testimonials fetch
-    │   ├── projects.js     # Loads/filters projects from projects.json
-    │   └── animations.js   # Particle canvas & extra scroll animations
+    │   ├── main.js
+    │   ├── projects.js
+    │   └── animations.js
+    │
     ├── data/
-    │   ├── testimonials.json   # 12 client testimonials (fetched dynamically)
-    │   └── projects.json       # Project data
+    │   ├── testimonials.json
+    │   └── projects.json
+    │
     ├── images/
     │   ├── hero/
     │   │   └── hero-avatar.png
-    │   └── projects/           # Project thumbnail images
+    │   │
+    │   ├── icons/
+    │   │   ├── react.png
+    │   │   ├── node.png
+    │   │   ├── mongodb.png
+    │   │   └── blockchain.png
+    │   │
+    │   ├── projects/
+    │   │   ├── project1.png
+    │   │   ├── project2.png
+    │   │   ├── project3.png
+    │   │   └── project4.png
+    │   │
+    │   └── testimonials/
+    │       ├── client1.jpg
+    │       ├── client2.jpg
+    │       ├── client3.jpg
+    │       └── client4.jpg
+    │
     └── resume/
         └── alok-pandit-resume.pdf
 ```
 
 ---
 
-## 🚀 Getting Started
+# 🎨 Design System
 
-### Option 1 — Open Directly (Quick Preview)
-Just double-click `index.html`. Note: testimonials may use fallback data due to `fetch()` requiring a server.
+The design system is defined in `style.css`.
 
-### Option 2 — Local Dev Server (Recommended)
-```bash
-# Using VS Code Live Server extension (recommended)
-# Right-click index.html → "Open with Live Server"
+CSS variables ensure **consistent styling across the project**.
 
-# Or using Python
-python -m http.server 3000
-
-# Or using Node.js http-server
-npx http-server . -p 3000
 ```
-Then open `http://localhost:3000` in your browser.
+:root{
 
-> **Why a server?** The `fetch('assets/data/testimonials.json')` call requires HTTP. The JS falls back to inline data automatically if running as `file://`.
+--primary:#6C63FF;
+--secondary:#9B5DE5;
+--accent:#00F5D4;
 
----
+--bg-dark:#0F0F1A;
+--card-dark:#1B1B2F;
 
-## 🎨 Design System
+--text-light:#F5F5F5;
+--text-dark:#111111;
 
-All design tokens live in `style.css` `:root`:
+--grad-primary:linear-gradient(135deg,#6C63FF,#9B5DE5);
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--primary` | `#6C63FF` | Brand purple |
-| `--accent` | `#00F5D4` | Teal highlight |
-| `--secondary` | `#9B5DE5` | Gradient end |
-| `--bg-dark` | `#0F0F1A` | Page background |
-| `--card-dark` | `#1B1B2F` | Card surfaces |
-| `--grad-primary` | `135deg, #6C63FF → #9B5DE5` | Buttons, headings |
-
----
-
-## 📱 Responsive Breakpoints
-
-| Breakpoint | Behaviour |
-|-----------|-----------|
-| `> 1024px` | Full desktop — 2-col hero, multi-col footer |
-| `≤ 1024px` | Tablet — stacked hero/about, 2-col footer |
-| `≤ 768px` | Mobile — hamburger menu visible, all grids → 1 col |
-| `≤ 480px` | Small mobile — full-width buttons, 2-col skills |
-
----
-
-## 💬 Testimonials System
-
-Testimonials are loaded dynamically from `assets/data/testimonials.json`:
-
-```json
-{
-  "name": "Rahul Kumar",
-  "company": "CEO, Panic Outfits",
-  "image": "",
-  "review": "Alok built our entire e-commerce platform..."
 }
 ```
 
-- **Image**: Provide a path like `assets/images/testimonials/client1.jpg`, or leave `""` for initials avatar fallback
-- **Marquee rows**: JS renders 3 rows, alternating direction (Left → Right → Left)
-- **Duplication**: Each row's cards are doubled in HTML for seamless infinite scroll
+---
+
+# 🖋 Typography
+
+Fonts used:
+
+**Poppins** — Headings
+**Fira Code** — Developer styled text
+
+CDN:
+
+```
+https://fonts.googleapis.com/css2?family=Poppins
+https://fonts.googleapis.com/css2?family=Fira+Code
+```
 
 ---
 
-## 🛠️ Tech Stack
+# 🧩 JSON Based Dynamic Content
 
-| Layer | Technology |
-|-------|-----------|
-| Structure | HTML5 |
-| Styles | Vanilla CSS (custom properties, grid, flexbox) |
-| Interactivity | Vanilla JavaScript (ES2022+) |
-| Animations | AOS.js (scroll), custom CSS @keyframes |
-| Icons | Font Awesome 6.5 |
-| Fonts | Google Fonts — Poppins + Fira Code |
+Projects and testimonials are not hard-coded.
+
+They are loaded from JSON files.
+
+This makes the portfolio **scalable and easy to maintain**.
 
 ---
 
-## 📝 Customisation Checklist
+# 📊 Projects System
 
-1. **Personal info** — Update name, email, location, GitHub/LinkedIn URLs in `index.html`
-2. **Avatar** — Replace `assets/images/hero/hero-avatar.png` with your photo
-3. **Resume** — Replace `assets/resume/alok-pandit-resume.pdf`
-4. **Projects** — Add entries to `assets/data/projects.json`
-5. **Testimonials** — Add/edit entries in `assets/data/testimonials.json`
-6. **GitHub stats image** — Update the `src` of `#githubGraphImg` in `index.html` with your GitHub username:
-   ```html
-   <img src="https://ghchart.rshah.org/YOUR_USERNAME" ... />
-   ```
+Projects are stored in:
+
+```
+assets/data/projects.json
+```
+
+Example structure:
+
+```
+{
+"id":1,
+"title":"Panic Outfits",
+"category":"web",
+"image":"assets/images/projects/project1.png",
+"live":"https://example.com",
+"github":"https://github.com/example"
+}
+```
+
+Features:
+
+• Latest projects on homepage
+• Full project list on all-projects.html
+• Filter by category
+• Pagination support
 
 ---
 
-## 📄 License
+# 💬 Testimonials System
 
-MIT — free to use as a template. Attribution appreciated but not required.
+Testimonials are stored in:
+
+```
+assets/data/testimonials.json
+```
+
+Example:
+
+```
+{
+"name":"Rahul Kumar",
+"company":"CEO, Panic Outfits",
+"image":"",
+"review":"Alok built our entire e-commerce platform..."
+}
+```
+
+Features:
+
+• Loaded dynamically using fetch()
+• Infinite marquee animation
+• 3 rows scrolling alternately
+
+Row behaviour:
+
+Row 1 → Left direction
+Row 2 → Right direction
+Row 3 → Left direction
 
 ---
 
-<p align="center">Built with ❤️ and ☕ by <strong>Alok Pandit</strong></p>
+# 📱 Responsive Design
+
+Breakpoints used:
+
+| Width   | Layout              |
+| ------- | ------------------- |
+| >1024px | Desktop layout      |
+| ≤1024px | Tablet layout       |
+| ≤768px  | Mobile layout       |
+| ≤480px  | Small mobile layout |
+
+All sections are designed **mobile-first**.
+
+---
+
+# 🧠 Core JavaScript Logic
+
+Main logic is in:
+
+```
+assets/js/main.js
+```
+
+Responsibilities:
+
+• Navbar toggle
+• Hamburger animation
+• Typewriter effect
+• Counter animation
+• Fetch testimonials
+• Back to top button
+
+---
+
+# 🎬 Animations
+
+Animations used:
+
+• CSS Keyframe animations
+• Scroll animations via AOS.js
+• Marquee scrolling testimonials
+• Hover gradient effects
+• Floating decorative elements
+
+---
+
+# 🛠 Tech Stack
+
+| Layer         | Technology   |
+| ------------- | ------------ |
+| Structure     | HTML5        |
+| Styling       | CSS3         |
+| Interactivity | JavaScript   |
+| Animation     | AOS.js       |
+| Icons         | FontAwesome  |
+| Fonts         | Google Fonts |
+
+---
+
+# ⚙️ Running the Project
+
+## Option 1 — Direct Open
+
+Open `index.html`.
+
+Note: JSON fetch may fallback if opened with `file://`.
+
+---
+
+## Option 2 — Local Server (Recommended)
+
+Using Python
+
+```
+python -m http.server 3000
+```
+
+Using Node
+
+```
+npx http-server . -p 3000
+```
+
+Open:
+
+```
+http://localhost:3000
+```
+
+---
+
+# 🔧 Customization Guide
+
+Steps to customize this portfolio:
+
+### 1 Update Avatar
+
+Replace:
+
+```
+assets/images/hero/hero-avatar.png
+```
+
+---
+
+### 2 Update Resume
+
+Replace:
+
+```
+assets/resume/alok-pandit-resume.pdf
+```
+
+---
+
+### 3 Add New Projects
+
+Edit:
+
+```
+assets/data/projects.json
+```
+
+---
+
+### 4 Add Testimonials
+
+Edit:
+
+```
+assets/data/testimonials.json
+```
+
+---
+
+### 5 Update GitHub Graph
+
+Edit this image source in index.html:
+
+```
+https://ghchart.rshah.org/YOUR_USERNAME
+```
+
+Replace with your GitHub username.
+
+---
+
+# 🚀 Future Improvements
+
+Possible upgrades:
+
+• Blog section
+• Dark/Light toggle
+• WebGL hero animation
+• GitHub contribution API
+• Project case studies
+• CMS integration
+
+---
+
+# 📄 License
+
+MIT License
+
+You are free to use this portfolio template.
+
+Attribution is appreciated but not required.
+
+---
+
+# ❤️ Author
+
+**Alok Pandit**
+
+MERN Stack Developer
+Blockchain Developer
+
+GitHub:
+https://github.com/alokpanditt
+
+Portfolio:
+https://portfoolio-web.netlify.app/
+
+---
+
+<p align="center">
+Built with ❤️ by <strong>Alok Pandit</strong>
+</p>
