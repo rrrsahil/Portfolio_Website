@@ -1,0 +1,1056 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alok Pandit — MERN Stack & Blockchain Developer</title>
+    <meta
+      name="description"
+      content="Alok Pandit is a Full Stack MERN and Blockchain Developer building scalable web apps and Web3 solutions."
+    />
+    <meta
+      name="keywords"
+      content="MERN Stack Developer, Blockchain Developer, React, Node.js, Solidity, Web3, Smart Contracts, Full Stack"
+    />
+    <meta name="author" content="Alok Pandit" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Alok Pandit — MERN Stack & Blockchain Developer"
+    />
+    <meta
+      property="og:description"
+      content="Full Stack MERN Developer & Blockchain Engineer. Building Scalable Web Apps & Web3 Solutions."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/hero/hero-avatar.png" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body data-page="index">
+    <!-- ====== LOADER ====== -->
+    <div id="loader">
+      <div class="loader-logo">AP.</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <div class="loader-text">Initializing portfolio...</div>
+    </div>
+
+    <!-- ====== PARTICLE CANVAS ====== -->
+    <canvas
+      id="particleCanvas"
+      style="
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.5;
+      "
+    ></canvas>
+
+    <!-- ====== NAVBAR ====== -->
+    <nav id="navbar">
+      <div class="container">
+        <div class="nav-inner">
+          <a href="index.html" class="nav-logo">Alok<span>.</span></a>
+
+          <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-cta">
+            <a
+              href="assets/resume/alok-pandit-resume.pdf"
+              download
+              class="btn btn-primary nav-resume"
+            >
+              <i class="fas fa-download"></i> Resume
+            </a>
+          </div>
+
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+    <!-- Mobile Nav — slides from the right -->
+    <nav
+      class="mobile-nav"
+      id="mobileNav"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- ====== HERO ====== -->
+    <section id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="container hero-inner">
+        <!-- Left -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i
+              class="fas fa-circle"
+              style="color: var(--accent); animation: pulseDot 2s infinite"
+            ></i>
+            Available for Work
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="name">Alok Pandit</span>
+            <span class="role-line"
+              >Building the Future, One Line at a Time</span
+            >
+          </h1>
+          <p class="hero-typing">
+            <span id="typingText">MERN Stack Developer</span
+            ><span class="cursor">|</span>
+          </p>
+          <p class="hero-desc">
+            Full Stack MERN Developer &amp; Blockchain Engineer crafting
+            scalable web applications and decentralized solutions. JavaScript
+            &bull; Node.js &bull; React &bull; Solidity.
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-rocket"></i> View Projects
+            </a>
+            <a
+              href="assets/resume/alok-pandit-resume.pdf"
+              download
+              class="btn btn-outline"
+            >
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-num"><span data-count="20">0</span>+</div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num"><span data-count="15">0</span>+</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num"><span data-count="2">0</span>+</div>
+              <div class="stat-label">Years Exp.</div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Visual -->
+        <div class="hero-visual">
+          <div class="hero-img-wrap float">
+            <div class="hero-orbit"><div class="orbit-dot"></div></div>
+            <div class="hero-orbit hero-orbit-2">
+              <div class="orbit-dot orbit-dot-2"></div>
+            </div>
+            <img
+              src="assets/images/hero/hero-avatar.png"
+              alt="Alok Pandit"
+              class="hero-avatar"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'flex';
+              "
+            />
+            <div class="hero-avatar-fallback" style="display: none">👨‍💻</div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="float-badge b1">
+            <i class="fas fa-check-circle" style="color: var(--accent)"></i>
+            <div>
+              <div class="badge-val">MERN</div>
+              <div style="font-size: 0.7rem; color: var(--text-muted)">
+                Full Stack
+              </div>
+            </div>
+          </div>
+          <div class="float-badge b2">
+            <i class="fas fa-cube" style="color: #ffd166; font-size: 1rem"></i>
+            <div>
+              <div class="badge-val">Web3</div>
+              <div style="font-size: 0.7rem; color: var(--text-muted)">
+                Blockchain
+              </div>
+            </div>
+          </div>
+          <div class="float-badge b3">
+            <i class="fas fa-star" style="color: var(--primary)"></i>
+            <div>
+              <div style="font-size: 0.8rem; font-weight: 600">Open to</div>
+              <div style="font-size: 0.7rem; color: var(--text-muted)">
+                Opportunities
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-img-wrap" data-aos="fade-right">
+            <div class="about-img-frame">
+              <div class="about-img-inner">
+                <img
+                  src="assets/images/hero/hero-avatar.png"
+                  alt="Alok Pandit"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <i class="fas fa-user" style="display: none"></i>
+              </div>
+            </div>
+            <div class="about-exp-badge">
+              <div class="years">2+</div>
+              <div class="label">Years Experience</div>
+            </div>
+          </div>
+
+          <div class="about-content" data-aos="fade-left">
+            <div class="section-tag">// about me</div>
+            <h2>
+              Passionate About
+              <span style="color: var(--primary)">Clean Code</span>
+            </h2>
+            <p>
+              I'm a Full Stack MERN Developer and Blockchain Engineer with 2+
+              years of experience building scalable web applications and
+              decentralized solutions. I specialize in creating seamless user
+              experiences with efficient, maintainable code.
+            </p>
+            <p>
+              I love working with modern JavaScript ecosystems, from React
+              frontends to Node.js APIs, and I'm equally passionate about Web3 —
+              building smart contracts, DApps, and blockchain integrations.
+            </p>
+
+            <div class="about-code">
+              <div class="code-line">
+                <span class="kw">const</span>
+                <span class="code-key"> developer</span> = {
+              </div>
+              <div class="code-line" style="padding-left: 20px">
+                <span class="code-key">name</span>:
+                <span class="code-str">"Alok Pandit"</span>,
+              </div>
+              <div class="code-line" style="padding-left: 20px">
+                <span class="code-key">stack</span>:
+                <span class="code-str">["MERN", "Web3", "Solidity"]</span>,
+              </div>
+              <div class="code-line" style="padding-left: 20px">
+                <span class="code-key">available</span>:
+                <span class="code-val">true</span>,
+              </div>
+              <div class="code-line" style="padding-left: 20px">
+                <span class="code-key">passion</span>:
+                <span class="code-str">"Building things that matter"</span>
+              </div>
+              <div class="code-line">};</div>
+            </div>
+
+            <div class="about-facts">
+              <div class="fact-card">
+                <div class="fact-icon"><i class="fas fa-code"></i></div>
+                <div class="fact-text">
+                  <div class="val">20+ Projects</div>
+                  <div class="key">Delivered</div>
+                </div>
+              </div>
+              <div class="fact-card">
+                <div class="fact-icon"><i class="fab fa-ethereum"></i></div>
+                <div class="fact-text">
+                  <div class="val">10+ Smart Contracts</div>
+                  <div class="key">Deployed</div>
+                </div>
+              </div>
+              <div class="fact-card">
+                <div class="fact-icon"><i class="fas fa-users"></i></div>
+                <div class="fact-text">
+                  <div class="val">15+ Clients</div>
+                  <div class="key">Satisfied</div>
+                </div>
+              </div>
+              <div class="fact-card">
+                <div class="fact-icon"><i class="fas fa-coffee"></i></div>
+                <div class="fact-text">
+                  <div class="val">∞ Coffee</div>
+                  <div class="key">Consumed</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SKILLS ====== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">// tech stack</div>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-sub">
+            My toolkit for building everything from SPAs to blockchain DApps.
+          </p>
+        </div>
+
+        <div class="skills-tabs" data-aos="fade-up">
+          <button class="skill-tab active" data-tab="all">All</button>
+          <button class="skill-tab" data-tab="frontend">Frontend</button>
+          <button class="skill-tab" data-tab="backend">Backend</button>
+          <button class="skill-tab" data-tab="blockchain">Blockchain</button>
+          <button class="skill-tab" data-tab="tools">Tools</button>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div
+            class="skill-card"
+            data-category="frontend"
+            data-aos="zoom-in"
+            data-aos-delay="50"
+          >
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <div class="skill-name">HTML5</div>
+            <div class="skill-level">
+              <div class="skill-level-fill" data-level="95"></div>
+            </div>
+          </div>
+          <div
+            class="skill-card"
+            data-category="frontend"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <div class="skill-name">CSS3</div>
+            <div class="skill-level">
+              <div class="skill-level-fill" data-level="90"></div>
+            </div>
+          </div>
+          <div
+            class="skill-card"
+            data-category="frontend"
+            data-aos="zoom-in"
+            data-aos-delay="150"
+          >
+            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-level">
+              <div class="skill-level-fill" data-level="92"></div>
+            </div>
+          </div>
+          <div
+            class="skill-card"
+            data-category="frontend"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="skill-icon"><i class="fab fa-react"></i></div>
+            <div class="skill-name">React</div>
+            <div class="skill-level">
+              <div class="skill-level-fill" data-level="90"></div>
+            </div>
+          </div>
+          <div
+            class="skill-card"
+            data-category="frontend"
+            data-aos="zoom-in"
+            data-aos-delay="250"
+          >
+            <div class="skill-icon" style="color: #06b6d4">
+              <i class="fas fa-wind"></i>
+            </div>
+            <div class="skill-name">Tailwind</div>
+            <div class="skill-level">
+              <div class="skill-level-fill" data-level="85"></div>
+            </div>
+          </div>
+          <!-- Backend -->
+          <div
+            class="skill-card"
+            data-category="backend"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="skill-icon" style="color: #68a063">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <div class="skill-name">Node.js</div>
+            <div class="skill-level">
+              <div class="skill-level-fill" data-level="88"></div>
+            </div>
+          </div>
+          <div
+            class="skill-card"
+            data-category="backend"
+            data-aos="zoom-in"
+            data-aos-delay="150"
+          >
+            <div class="skill-icon" style="color: #999">
+              <i class="fas fa-server"></i>
+            </div>
+            <div class="skill-name">Express</div>
+            <div class="skill-level">
+              <div class="skill-level-fill" data-level="88"></div>
+            </div>
+          </div>
+          <div
+            class="skill-card"
+            data-category="backend"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="skill-icon" style="color: #47a248">
+              <i class="fas fa-database"></i>
+            </div>
+            <div class="skill-name">MongoDB</div>
+            <div class="skill-level">
+              <div class="skill-level-fill" data-level="85"></div>
+            </div>
+          </div>
+          <div
+            class="skill-card"
+            data-category="backend"
+            data-aos="zoom-in"
+            data-aos-delay="250"
+          >
+            <div class="skill-icon" style="color: #336791">
+              <i class="fas fa-table"></i>
+            </div>
+            <div class="skill-name">PostgreSQL</div>
+            <div class="skill-level">
+              <div class="skill-level-fill" data-level="70"></div>
+            </div>
+          </div>
+          <!-- Blockchain -->
+          <div
+            class="skill-card"
+            data-category="blockchain"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="skill-icon" style="color: #00bfff">
+              <i class="fas fa-file-code"></i>
+            </div>
+            <div class="skill-name">Solidity</div>
+            <div class="skill-level">
+              <div class="skill-level-fill" data-level="82"></div>
+            </div>
+          </div>
+          <div
+            class="skill-card"
+            data-category="blockchain"
+            data-aos="zoom-in"
+            data-aos-delay="150"
+          >
+            <div class="skill-icon" style="color: #627eea">
+              <i class="fab fa-ethereum"></i>
+            </div>
+            <div class="skill-name">Ethereum</div>
+            <div class="skill-level">
+              <div class="skill-level-fill" data-level="78"></div>
+            </div>
+          </div>
+          <div
+            class="skill-card"
+            data-category="blockchain"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="skill-icon" style="color: #ff6b35">
+              <i class="fas fa-link"></i>
+            </div>
+            <div class="skill-name">Web3.js</div>
+            <div class="skill-level">
+              <div class="skill-level-fill" data-level="80"></div>
+            </div>
+          </div>
+          <div
+            class="skill-card"
+            data-category="blockchain"
+            data-aos="zoom-in"
+            data-aos-delay="250"
+          >
+            <div class="skill-icon" style="color: #4e5ee4">
+              <i class="fas fa-cube"></i>
+            </div>
+            <div class="skill-name">Smart Contracts</div>
+            <div class="skill-level">
+              <div class="skill-level-fill" data-level="82"></div>
+            </div>
+          </div>
+          <!-- Tools -->
+          <div
+            class="skill-card"
+            data-category="tools"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="skill-icon" style="color: #f05032">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <div class="skill-name">Git</div>
+            <div class="skill-level">
+              <div class="skill-level-fill" data-level="90"></div>
+            </div>
+          </div>
+          <div
+            class="skill-card"
+            data-category="tools"
+            data-aos="zoom-in"
+            data-aos-delay="150"
+          >
+            <div class="skill-icon" style="color: #2496ed">
+              <i class="fab fa-docker"></i>
+            </div>
+            <div class="skill-name">Docker</div>
+            <div class="skill-level">
+              <div class="skill-level-fill" data-level="72"></div>
+            </div>
+          </div>
+          <div
+            class="skill-card"
+            data-category="tools"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="skill-icon" style="color: #ff6c37">
+              <i class="fas fa-vial"></i>
+            </div>
+            <div class="skill-name">Postman</div>
+            <div class="skill-level">
+              <div class="skill-level-fill" data-level="88"></div>
+            </div>
+          </div>
+          <div
+            class="skill-card"
+            data-category="tools"
+            data-aos="zoom-in"
+            data-aos-delay="250"
+          >
+            <div class="skill-icon" style="color: #9b59b6">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div class="skill-name">Socket.IO</div>
+            <div class="skill-level">
+              <div class="skill-level-fill" data-level="84"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SERVICES ====== -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">// what i do</div>
+          <h2 class="section-title">Services I Offer</h2>
+          <p class="section-sub">
+            End-to-end development from frontend to smart contracts.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+            <div class="service-num">01</div>
+            <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>MERN Stack Development</h3>
+            <p>
+              Full-stack web applications with MongoDB, Express, React, and
+              Node.js. Scalable, maintainable, and production-ready.
+            </p>
+            <div class="service-tags">
+              <span class="service-tag">React</span>
+              <span class="service-tag">Node.js</span>
+              <span class="service-tag">MongoDB</span>
+              <span class="service-tag">REST API</span>
+            </div>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-num">02</div>
+            <div class="service-icon"><i class="fas fa-link"></i></div>
+            <h3>Blockchain Development</h3>
+            <p>
+              Smart contracts in Solidity, Web3 integrations, DApps on Ethereum.
+              Secure, audited, and optimized for gas efficiency.
+            </p>
+            <div class="service-tags">
+              <span class="service-tag">Solidity</span>
+              <span class="service-tag">Web3.js</span>
+              <span class="service-tag">DApps</span>
+              <span class="service-tag">ERC-721</span>
+            </div>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="service-num">03</div>
+            <div class="service-icon"><i class="fas fa-server"></i></div>
+            <h3>API Development</h3>
+            <p>
+              RESTful APIs with JWT authentication, rate limiting, and Swagger
+              documentation. Microservices-ready architecture.
+            </p>
+            <div class="service-tags">
+              <span class="service-tag">REST</span>
+              <span class="service-tag">JWT</span>
+              <span class="service-tag">Microservices</span>
+              <span class="service-tag">Docker</span>
+            </div>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-num">04</div>
+            <div class="service-icon"><i class="fas fa-bolt"></i></div>
+            <h3>Real-Time Applications</h3>
+            <p>
+              Live chat, notifications, multiplayer features using Socket.IO and
+              WebSockets. High-performance event-driven systems.
+            </p>
+            <div class="service-tags">
+              <span class="service-tag">Socket.IO</span>
+              <span class="service-tag">WebSockets</span>
+              <span class="service-tag">Live Chat</span>
+              <span class="service-tag">Redis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== LATEST PROJECTS ====== -->
+    <section
+      id="projects"
+      class="section"
+      style="background: var(--card-darker)"
+    >
+      <div class="container">
+        <div class="projects-header-row">
+          <div data-aos="fade-right">
+            <div class="section-tag">// recent work</div>
+            <h2 class="section-title" style="text-align: left">
+              Latest Projects
+            </h2>
+          </div>
+          <a
+            href="all-projects.html"
+            class="btn btn-outline"
+            data-aos="fade-left"
+          >
+            View All Projects <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="projects-grid" id="latestProjectsGrid">
+          <!-- Loaded from projects.json via JS -->
+          <div
+            style="
+              grid-column: 1/-1;
+              text-align: center;
+              padding: 60px;
+              color: var(--text-muted);
+            "
+          >
+            <i
+              class="fas fa-spinner fa-spin"
+              style="
+                font-size: 2rem;
+                color: var(--primary);
+                margin-bottom: 16px;
+                display: block;
+              "
+            ></i>
+            Loading projects...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== GITHUB SECTION ====== -->
+    <section id="github-section" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">// open source</div>
+          <h2 class="section-title">GitHub Activity</h2>
+          <p class="section-sub">
+            Consistently building and contributing. Every day matters.
+          </p>
+        </div>
+        <div class="github-wrap" data-aos="fade-up">
+          <img
+            id="githubGraphImg"
+            alt="GitHub Contribution Graph"
+            style="max-width: 100%; border-radius: 8px"
+          />
+          <a
+            href="https://github.com/alokpanditt"
+            target="_blank"
+            class="github-link"
+          >
+            <i class="fab fa-github"></i> @alokpanditt — View Full Profile
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CODE SNIPPET ====== -->
+    <section id="code-snippet" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">// code highlight</div>
+          <h2 class="section-title">Featured Code</h2>
+          <p class="section-sub">
+            A taste of how I write clean, readable Solidity.
+          </p>
+        </div>
+
+        <div class="snippet-wrap" data-aos="fade-up">
+          <div class="snippet-header">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+            <div class="snippet-filename">Voting.sol</div>
+          </div>
+          <div class="snippet-code">
+            <pre><span class="cm">// SPDX-License-Identifier: MIT</span>
+<span class="kw">pragma</span> <span class="fn">solidity</span> ^<span class="num">0.8.19</span>;
+
+<span class="kw">contract</span> <span class="fn">SecureVoting</span> {
+  <span class="kw">mapping</span>(<span class="fn">address</span> =&gt; <span class="fn">bool</span>) <span class="kw">public</span> voters;
+  <span class="kw">mapping</span>(<span class="fn">string</span>  =&gt; <span class="fn">uint</span>)  <span class="kw">public</span> votesReceived;
+
+  <span class="kw">event</span> <span class="fn">Voted</span>(<span class="fn">address indexed</span> voter, <span class="fn">string</span> candidate);
+
+  <span class="kw">function</span> <span class="fn">vote</span>(<span class="fn">string calldata</span> candidate) <span class="kw">external</span> {
+    <span class="kw">require</span>(!hasVoted[<span class="fn">msg.sender</span>], <span class="str">"Already voted"</span>);
+    hasVoted[<span class="fn">msg.sender</span>] = <span class="kw">true</span>;
+    votes[candidate]++;
+    <span class="kw">emit</span> <span class="fn">Voted</span>(<span class="fn">msg.sender</span>, candidate);
+  }
+}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== TESTIMONIALS ====== -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">// client love</div>
+          <h2 class="section-title">What Clients Say</h2>
+          <p class="section-sub">Real feedback from real collaborations.</p>
+        </div>
+      </div>
+
+      <!-- Dynamic marquee rows injected by main.js from testimonials.json -->
+      <div class="marquee-wrapper" id="testimonialsWrapper">
+        <!-- JS renders 3 rows: left, right, left -->
+        <div
+          style="text-align: center; padding: 40px; color: var(--text-muted)"
+        >
+          <i
+            class="fas fa-spinner fa-spin"
+            style="font-size: 2rem; color: var(--primary)"
+          ></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">// get in touch</div>
+          <h2 class="section-title">Let's Work Together</h2>
+          <p class="section-sub">
+            Have a project? Let's build something amazing.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info" data-aos="fade-right">
+            <h3>Let's <span>Connect</span></h3>
+            <p>
+              Whether you need a MERN stack application, blockchain integration,
+              or want to discuss a new idea — I'm just a message away.
+            </p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <div class="ci-label">Email</div>
+                  <div class="ci-val">alok.pandit@email.com</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                  <div class="ci-label">Location</div>
+                  <div class="ci-val">India (Remote Worldwide)</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="ci-icon"><i class="fas fa-clock"></i></div>
+                <div>
+                  <div class="ci-label">Response Time</div>
+                  <div class="ci-val">Within 24 hours</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <a
+                href="https://github.com/alokpanditt"
+                target="_blank"
+                class="social-btn"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://linkedin.com/in/alokpandit"
+                target="_blank"
+                class="social-btn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://twitter.com/alokpandit"
+                target="_blank"
+                class="social-btn"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://t.me/alokpandit"
+                target="_blank"
+                class="social-btn"
+                ><i class="fab fa-telegram-plane"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div data-aos="fade-left">
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">Full Name *</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    placeholder="Rahul Kumar"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="femail">Email *</label>
+                  <input
+                    type="email"
+                    id="femail"
+                    placeholder="rahul@company.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="fservice">Service Needed</label>
+                <select id="fservice">
+                  <option value="">Select a service...</option>
+                  <option>MERN Stack Development</option>
+                  <option>Blockchain / Smart Contracts</option>
+                  <option>API Development</option>
+                  <option>Real-Time Application</option>
+                  <option>Code Review / Consulting</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="fmsg">Message *</label>
+                <textarea
+                  id="fmsg"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary submit-btn"
+                style="width: 100%; justify-content: center"
+              >
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+
+            <div class="form-success" id="formSuccess">
+              <i
+                class="fas fa-check-circle"
+                style="
+                  color: var(--accent);
+                  font-size: 3rem;
+                  display: block;
+                  margin-bottom: 12px;
+                "
+              ></i>
+              <h3 style="margin-bottom: 8px">Message Sent!</h3>
+              <p style="color: var(--text-muted)">
+                Thanks for reaching out! I'll get back to you within 24 hours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="nav-logo">Alok<span>.</span></a>
+            <p>
+              MERN Stack & Blockchain Developer building scalable web apps and
+              Web3 solutions. Open to freelance, full-time, and collaboration.
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://github.com/alokpanditt"
+                target="_blank"
+                class="social-btn"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://linkedin.com/in/alokpandit"
+                target="_blank"
+                class="social-btn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://twitter.com/alokpandit"
+                target="_blank"
+                class="social-btn"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Projects</h4>
+            <ul>
+              <li><a href="all-projects.html">All Projects</a></li>
+              <li><a href="all-projects.html?filter=web">Web Apps</a></li>
+              <li>
+                <a href="all-projects.html?filter=blockchain">Blockchain</a>
+              </li>
+              <li><a href="all-projects.html?filter=api">API / Backend</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Download</h4>
+            <ul>
+              <li>
+                <a href="assets/resume/alok-pandit-resume.pdf" download
+                  >Resume (PDF)</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/alokpanditt" target="_blank"
+                  >GitHub Profile</a
+                >
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/alokpandit" target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 <span>Alok Pandit</span>. Crafted with ❤️ & ☕</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#contact">Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" title="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/animations.js"></script>
+  </body>
+</html>

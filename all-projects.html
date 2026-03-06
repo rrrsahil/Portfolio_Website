@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Projects — Alok Pandit</title>
+    <meta
+      name="description"
+      content="Browse all projects by Alok Pandit — MERN Stack, Blockchain, API, and Real-Time apps."
+    />
+    <meta
+      name="keywords"
+      content="MERN projects, blockchain projects, React apps, Web3, Solidity, Node.js portfolio"
+    />
+
+    <!-- OG -->
+    <meta property="og:title" content="All Projects — Alok Pandit" />
+    <meta
+      property="og:description"
+      content="Browse Alok Pandit's full project portfolio including web, blockchain, and API projects."
+    />
+    <meta property="og:type" content="website" />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body data-page="all-projects">
+    <!-- Loader -->
+    <div id="loader">
+      <div class="loader-logo">AP.</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <div class="loader-text">Loading projects...</div>
+    </div>
+
+    <!-- ====== NAVBAR ====== -->
+    <nav id="navbar">
+      <div class="container">
+        <div class="nav-inner">
+          <a href="index.html" class="nav-logo">Alok<span>.</span></a>
+
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#projects" class="active">Projects</a></li>
+            <li><a href="index.html#testimonials">Testimonials</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-cta">
+            <a
+              href="assets/resume/alok-pandit-resume.pdf"
+              download
+              class="btn btn-primary nav-resume"
+            >
+              <i class="fas fa-download"></i> Resume
+            </a>
+          </div>
+
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Nav -->
+    <nav
+      class="mobile-nav"
+      id="mobileNav"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#testimonials">Testimonials</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+      <div class="container" style="position: relative; z-index: 2">
+        <div data-aos="fade-up">
+          <div class="section-tag">// portfolio</div>
+          <h1 class="section-title">All Projects</h1>
+          <p class="section-sub">
+            A complete showcase of my work across MERN, Blockchain, APIs, and
+            Real-Time applications.
+          </p>
+          <div class="breadcrumb">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <span>/</span>
+            <span>All Projects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section class="section" style="padding-top: 40px">
+      <div class="container">
+        <!-- Stats Row -->
+        <div
+          style="
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 40px;
+          "
+          data-aos="fade-up"
+        >
+          <div
+            class="fact-card"
+            style="
+              min-width: 140px;
+              justify-content: center;
+              text-align: center;
+              flex-direction: column;
+              gap: 4px;
+            "
+          >
+            <div class="stat-num" style="font-size: 1.6rem">
+              <span data-count="8">0</span>+
+            </div>
+            <div class="stat-label">Total Projects</div>
+          </div>
+          <div
+            class="fact-card"
+            style="
+              min-width: 140px;
+              justify-content: center;
+              text-align: center;
+              flex-direction: column;
+              gap: 4px;
+            "
+          >
+            <div class="stat-num" style="font-size: 1.6rem">
+              <span data-count="4">0</span>
+            </div>
+            <div class="stat-label">Web Apps</div>
+          </div>
+          <div
+            class="fact-card"
+            style="
+              min-width: 140px;
+              justify-content: center;
+              text-align: center;
+              flex-direction: column;
+              gap: 4px;
+            "
+          >
+            <div class="stat-num" style="font-size: 1.6rem">
+              <span data-count="4">0</span>
+            </div>
+            <div class="stat-label">Blockchain</div>
+          </div>
+          <div
+            class="fact-card"
+            style="
+              min-width: 140px;
+              justify-content: center;
+              text-align: center;
+              flex-direction: column;
+              gap: 4px;
+            "
+          >
+            <div class="stat-num" style="font-size: 1.6rem">
+              <span data-count="1">0</span>
+            </div>
+            <div class="stat-label">APIs Built</div>
+          </div>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar" id="filterBar" data-aos="fade-up">
+          <!-- Dynamically populated by projects.js -->
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="allProjectsGrid">
+          <div
+            style="
+              grid-column: 1/-1;
+              text-align: center;
+              padding: 60px;
+              color: var(--text-muted);
+            "
+          >
+            <i
+              class="fas fa-spinner fa-spin"
+              style="
+                font-size: 2rem;
+                color: var(--primary);
+                margin-bottom: 16px;
+                display: block;
+              "
+            ></i>
+            Loading all projects...
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination" id="pagination"></div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+      class="section"
+      style="
+        background: var(--card-darker);
+        padding: 80px 0;
+        text-align: center;
+      "
+    >
+      <div class="container">
+        <div data-aos="fade-up">
+          <div class="section-tag">// collaborate</div>
+          <h2 class="section-title" style="margin-bottom: 16px">
+            Have a Project in Mind?
+          </h2>
+          <p class="section-sub" style="margin: 0 auto 32px">
+            Let's build something great together. I'm open to freelance,
+            contract, and full-time opportunities.
+          </p>
+          <div
+            style="
+              display: flex;
+              gap: 16px;
+              justify-content: center;
+              flex-wrap: wrap;
+            "
+          >
+            <a href="index.html#contact" class="btn btn-primary"
+              ><i class="fas fa-paper-plane"></i> Get In Touch</a
+            >
+            <a
+              href="assets/resume/alok-pandit-resume.pdf"
+              download
+              class="btn btn-outline"
+              ><i class="fas fa-download"></i> Download Resume</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div
+          class="footer-bottom"
+          style="
+            padding-top: 0;
+            border-top: 1px solid var(--border);
+            padding-top: 24px;
+          "
+        >
+          <p>&copy; 2025 <span>Alok Pandit</span>. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button id="backToTop" title="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/animations.js"></script>
+  </body>
+</html>

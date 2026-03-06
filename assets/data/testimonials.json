@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Rahul Kumar",
+    "company": "CEO, Panic Outfits",
+    "image": "",
+    "review": "Alok built our entire e-commerce platform from scratch in MERN. The quality and speed were outstanding — highly recommend!"
+  },
+  {
+    "name": "Arjun Singh",
+    "company": "Founder, VoteChain",
+    "image": "",
+    "review": "The smart contract Alok wrote for our voting DApp was clean, secure, and gas-optimized. Exactly what we needed."
+  },
+  {
+    "name": "Priya Mehta",
+    "company": "CTO, TaskFlow",
+    "image": "",
+    "review": "Our REST API now handles 10k+ requests daily without breaking a sweat. Professional, communicative, and delivered on time."
+  },
+  {
+    "name": "David Garcia",
+    "company": "Product Lead, LiveSync",
+    "image": "",
+    "review": "Alok integrated Socket.IO into our SaaS perfectly. Real-time notifications work flawlessly across thousands of users."
+  },
+  {
+    "name": "James Wilson",
+    "company": "Co-Founder, DeFi Labs",
+    "image": "",
+    "review": "Best blockchain developer I've worked with. He understood our DeFi requirements and delivered a robust, well-tested solution."
+  },
+  {
+    "name": "Neha Kapoor",
+    "company": "Dev Lead, FinTechX",
+    "image": "",
+    "review": "Incredible attention to code quality. Alok refactored our messy legacy API into a clean microservices architecture."
+  },
+  {
+    "name": "Sanjay Mishra",
+    "company": "CTO, Buildify",
+    "image": "",
+    "review": "Alok's React components are reusable and well-documented. He's the kind of developer who makes the whole team better."
+  },
+  {
+    "name": "Lucas Rodrigues",
+    "company": "Founder, ArtChain",
+    "image": "",
+    "review": "Our NFT marketplace is live and thriving thanks to Alok's ERC-721 implementation and IPFS integration. Brilliant work."
+  },
+  {
+    "name": "Aisha Thompson",
+    "company": "PM, ConnectHub",
+    "image": "",
+    "review": "Delivered a complex real-time chat feature in just 5 days. Alok's approach to Socket.IO architecture was elegant and scalable."
+  },
+  {
+    "name": "Marco Vitale",
+    "company": "Startup Founder",
+    "image": "",
+    "review": "Hired Alok for a 3-month contract, ended up keeping him for 8. He's efficient, proactive, and genuinely cares about the product."
+  },
+  {
+    "name": "Michael T.",
+    "company": "Photophorm Innovations",
+    "image": "",
+    "review": "Alok delivered exceptional work and helped bring our product concept to life. The MERN stack application was flawless — polished UI, fast API, and clean code."
+  },
+  {
+    "name": "Ian Ahmad",
+    "company": "Meteor Visuals",
+    "image": "",
+    "review": "Highly professional and detail-oriented. Alok built our REST API with proper authentication, rate limiting, and documentation. It handles 10k+ daily requests without issues."
+  }
+]

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Case Study — Alok Pandit</title>
+    <meta
+      name="description"
+      content="In-depth case study of Alok Pandit's project. Problem, solution, tech stack, and results."
+    />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body data-page="project-details">
+    <!-- Loader -->
+    <div id="loader">
+      <div class="loader-logo">AP.</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <div class="loader-text">Loading case study...</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="container">
+        <div class="nav-inner">
+          <a href="index.html" class="nav-logo">Alok<span>.</span></a>
+
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="all-projects.html" class="active">Projects</a></li>
+            <li><a href="index.html#testimonials">Testimonials</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-cta">
+            <a
+              href="assets/resume/alok-pandit-resume.pdf"
+              download
+              class="btn btn-primary nav-resume"
+            >
+              <i class="fas fa-download"></i> Resume
+            </a>
+          </div>
+
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <nav
+      class="mobile-nav"
+      id="mobileNav"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#services">Services</a>
+      <a href="all-projects.html">Projects</a>
+      <a href="index.html#testimonials">Testimonials</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div style="padding: 120px 0 0">
+      <div class="container">
+        <div class="breadcrumb" style="justify-content: flex-start">
+          <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          <span>/</span>
+          <a href="all-projects.html">Projects</a>
+          <span>/</span>
+          <span id="breadcrumbTitle">Case Study</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Detail Content (Injected by JS) -->
+    <section class="section" style="padding-top: 32px">
+      <div class="container" id="projectDetailContent">
+        <div
+          style="text-align: center; padding: 80px 0; color: var(--text-muted)"
+        >
+          <i
+            class="fas fa-spinner fa-spin"
+            style="
+              font-size: 2.5rem;
+              color: var(--primary);
+              margin-bottom: 16px;
+              display: block;
+            "
+          ></i>
+          Loading project details...
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Projects -->
+    <section class="section" style="background: var(--card-darker)">
+      <div class="container">
+        <div
+          class="section-header"
+          style="text-align: left; margin-bottom: 40px"
+          data-aos="fade-up"
+        >
+          <div class="section-tag">// more work</div>
+          <h2 class="section-title" style="text-align: left">
+            Related Projects
+          </h2>
+        </div>
+        <div class="projects-grid" id="relatedProjectsGrid"></div>
+        <div style="text-align: center; margin-top: 40px">
+          <a href="all-projects.html" class="btn btn-outline">
+            <i class="fas fa-th-large"></i> View All Projects
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div
+          class="footer-bottom"
+          style="padding-top: 24px; border-top: 1px solid var(--border)"
+        >
+          <p>&copy; 2025 <span>Alok Pandit</span>. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="index.html">Home</a>
+            <a href="all-projects.html">All Projects</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button id="backToTop" title="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script>
+      // Update breadcrumb and page title dynamically
+      document.addEventListener("DOMContentLoaded", () => {
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+        if (id) {
+          fetch("assets/data/projects.json")
+            .then((r) => r.json())
+            .then((data) => {
+              const p = data.find((x) => x.id == id) || data[0];
+              document.title = `${p.title} — Alok Pandit`;
+              const crumb = document.getElementById("breadcrumbTitle");
+              if (crumb) crumb.textContent = p.title;
+            });
+        }
+      });
+    </script>
+  </body>
+</html>
