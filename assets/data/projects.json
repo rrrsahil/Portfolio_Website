@@ -1,18 +1,18 @@
 [
   {
-    "id": 1,
-    "title": "Panic Outfits",
-    "category": "web",
-    "description": "A full-stack e-commerce platform built with MERN stack. Features include product management, cart, payment integration, and admin dashboard.",
-    "image": "assets/images/projects/panic.jpg",
-    "live": "https://panicoutfits.com",
-    "github": "https://github.com/alok",
-    "tech": ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-    "problem": "Merchants needed a scalable online store with real-time inventory management.",
-    "solution": "Built a MERN stack application with REST APIs, JWT authentication, and Stripe payment gateway.",
-    "result": "Reduced order processing time by 60% and improved user retention by 40%.",
-    "featured": true,
-    "date": "2025-11"
+  "id": 1,
+  "title": "PixelVault – Image Hosting & CDN API",
+  "category": "web",
+  "description": "A full-stack image hosting platform built with the MERN stack that allows users to upload, compress, manage, and share images using permanent public URLs.",
+  "image": "assets/images/projects/pixelvault.jpg",
+  "live": "https://pixel-vault-frontend-mpin.onrender.com",
+  "github": "https://github.com/rrrsahil/Pixel-Vault",
+  "tech": ["React", "Node.js", "Express", "MongoDB Atlas", "JWT", "Sharp", "Multer", "Render"],
+  "problem": "Developers and content creators often need a simple way to host images and generate permanent URLs for websites, emails, and projects without relying on heavy external services.",
+  "solution": "Built a scalable MERN stack image hosting platform with JWT authentication, automatic image compression using Sharp, duplicate image detection via hashing, infinite scrolling gallery, and RESTful APIs.",
+  "result": "Reduced storage usage by up to 70% through automatic WebP compression while providing instant image URLs and a responsive gallery for managing uploaded images.",
+  "featured": true,
+  "date": "2026-03"
   },
   {
     "id": 2,
