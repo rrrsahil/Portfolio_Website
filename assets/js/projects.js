@@ -50,7 +50,7 @@ function renderLatestProjects() {
   const grid = document.getElementById("latestProjectsGrid");
   if (!grid) return;
 
-  const latest = allProjects.slice(0, 4);
+  const latest = allProjects.slice(0, 3);
   grid.innerHTML = "";
   latest.forEach((project, i) => {
     grid.innerHTML += buildProjectCard(project, i);
