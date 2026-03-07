@@ -4,7 +4,7 @@
   "title": "PixelVault – Image Hosting & CDN API",
   "category": "web",
   "description": "A full-stack image hosting platform built with the MERN stack that allows users to upload, compress, manage, and share images using permanent public URLs.",
-  "image": "assets/images/projects/pixelvault.jpg",
+  "image": "assets/images/projects/pixel_vault.png",
   "live": "https://pixel-vault-frontend-mpin.onrender.com",
   "github": "https://github.com/rrrsahil/Pixel-Vault",
   "tech": ["React", "Node.js", "Express", "MongoDB Atlas", "JWT", "Sharp", "Multer", "Render"],
